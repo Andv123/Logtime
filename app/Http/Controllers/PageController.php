@@ -166,15 +166,7 @@ class PageController extends Controller
     //post add overtime
     public function postAddOvertime(Request $request, $id)
     {
-//        $this->validate($request,
-//            [
-//                'work' => 'required'
-//            ],
-//            [
-//                'work.required' => "Please enter work OT"
-//            ]
-//        );
-        $overtime_id = $request->overtimeId;//dd($overtime_id);
+        $overtime_id = $request->overtimeId;
         if (isset($overtime_id)) {
             $ot = Overtime::find($overtime_id);
         } else {
@@ -194,7 +186,6 @@ class PageController extends Controller
         $work = $request->work;
         if (isset($end)) {
             if (strtotime($end) < strtotime($start)) {
-                //dd('111');
                 $over['date'] = $date;
                 $over['date_type'] = $date_type;
                 $over['start'] = $start;
