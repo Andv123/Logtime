@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Overtime;
 use App\Attendence;
-use App\List_to_do;
 use Mail;
 
 class PageController extends Controller
