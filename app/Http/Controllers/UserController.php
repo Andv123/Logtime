@@ -5,8 +5,6 @@
     use App\Attendence;
     use App\Overtime;
     use App\User;
-    use Illuminate\Foundation\Auth\AuthenticatesUsers;
-    use Illuminate\Support\Facades\Auth;
     use Illuminate\Http\Request;
     use Maatwebsite\Excel\Facades\Excel;
     use App\Exports\UserExport;
