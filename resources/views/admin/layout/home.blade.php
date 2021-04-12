@@ -70,8 +70,10 @@
                                     Attendence
                                 </h3>
                                 <div class="card-tools">
-                                    <a href="../admin/home/export-off" class="btn btn-sm btn-tool">
-                                        <i class="fas fa-download"></i>
+                                    <a href="../admin/home/export-off" class="btn btn-sm btn-tool"
+                                       onclick="return confirm('Are you sure you want to export ' +
+                                           'off time user?');">
+                                           <i class="fas fa-download"></i>
                                     </a>
                                 </div>
                             </div>
