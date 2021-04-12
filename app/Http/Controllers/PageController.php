@@ -342,10 +342,5 @@ class PageController extends Controller
 
         return redirect('page/attendence/'.$id)->with('global', 'Add off time was success');
     }
-
-    //post search user
-    public function postSearch(Request $request) {
-        echo 'search';
-    }
-
+    
 }
